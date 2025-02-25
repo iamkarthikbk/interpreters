@@ -24,6 +24,10 @@ public class Lox {
   private static void runFile(String path) throws IOException {
     byte[] bytes = Files.readAllBytes(Paths.get(path));
     run(new String(bytes, Charset.defaultCharset()));
+
+    // this shows whether there was an error
+    // what is error code 65 ?
+    if (hadError) System.exit(65);
   }
 
   // a way to execute code provided interactively
@@ -36,6 +40,7 @@ public class Lox {
       String line = reader.readLine();
       if (line == null) break;
       run(line);
+      hadError = false;
     }
   }
 
