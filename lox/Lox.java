@@ -20,3 +20,10 @@ public class Lox {
     }
   }
 }
+
+// a way to read a file and then execute it's contents
+private static void runFile(String path) throws IOException {
+  byte[] bytes = Files.readAllBytes(Paths.get(path));
+  run(new String(bytes, Charset.defaultCharset()));
+}
+
