@@ -1,2 +1,3 @@
 - [2025-02-25 10:24:02] Section 4.2: todo from the very beginning of this section
 - [2025-02-25 10:24:45] Section 4.2: the codebase for lox doesn't compile yet.
+- [2025-02-26 09:07:53] Section 4.6.1: yet to start. scanning seems fine so far. better error messages would be very helpful.
